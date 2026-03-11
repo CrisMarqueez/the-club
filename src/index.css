@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    color-scheme: dark;
+}
+
+body {
+    margin: 0;
+    background-color: #0a0b14;
+    /* Fallback */
+    color: #e2e8f0;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow: hidden;
+    /* Prevent scroll on fullscreen app */
+}
+
+/* Custom utility for glassmorphism */
+.glass-panel {
+    @apply bg-[#151925]/90 backdrop-blur-md border border-[#2a2f3e] shadow-xl;
+}
+
+.text-gold {
+    color: #d4b483;
+}
+
+.border-gold {
+    border-color: #d4b483;
+}
+
+.text-cyan {
+    color: #4fd1c5;
+}
